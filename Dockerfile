@@ -1,6 +1,9 @@
 # Use Node.js official slim image
 FROM node:20-slim
 
+# Install curl
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
 # Create app directory
 WORKDIR /usr/src/app
 
