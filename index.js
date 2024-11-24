@@ -5,6 +5,10 @@ app.get('/health', (req, res) => {
     res.json({ status: 'healthy' });
 });
 
+app.get("/",(req,res)=>{
+    res.json({"message":"Home Page"})
+})
+
 // Handle 404 for any other routes
 app.use((req, res) => {
     res.status(404).send('Not Found');
