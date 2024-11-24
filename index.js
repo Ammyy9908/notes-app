@@ -6,7 +6,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get("/",(req,res)=>{
-    res.json({"message":"Home Page"})
+    res.json({"message":"Home Page Done"})
 })
 
 // Handle 404 for any other routes
